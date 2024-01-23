@@ -1,0 +1,28 @@
+/*Add Only !Important Css here! use Styled Component to write/overwrite any Customise Scrollbar in Windows/LinuxComponents*/
+body.platform-windows, body.platform-linux {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.2);
+}
+
+body.platform-windows ::-webkit-scrollbar, body.platform-linux ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body.platform-windows ::-webkit-scrollbar-track, body.platform-linux ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body.platform-windows ::-webkit-scrollbar-thumb, body.platform-linux ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body.platform-windows ::-webkit-scrollbar-thumb:hover, body.platform-linux ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+body.platform-windows ::-webkit-scrollbar-thumb:active, body.platform-linux ::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.6);
+}

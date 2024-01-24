@@ -1,21 +1,37 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "es6", "scripthost", "webworker", "esNext"],
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": false,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node"],
+    "paths": {
+      "lib/*": ["src/lib/*"],
+      "src/*": ["src/*"]
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "NodeNext"
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    "mocks",
+    "webpack"
+  ]
 }

@@ -134,3 +134,5 @@ dist
 .pnp.*
 
 # Additinal
+ios
+android

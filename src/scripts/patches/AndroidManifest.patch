@@ -1,0 +1,10 @@
+--- AndroidManifest.xml	2024-01-25 00:08:17
++++ AndroidManifestPatch.xml	2024-01-25 00:06:19
+@@ -38,4 +38,7 @@
+     <!-- Permissions -->
+ 
+     <uses-permission android:name="android.permission.INTERNET" />
++    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
++    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
++    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ </manifest>

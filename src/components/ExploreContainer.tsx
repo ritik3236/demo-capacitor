@@ -1,12 +1,13 @@
 import React from 'react';
 
 import './ExploreContainer.css';
+import { IonButton } from '@ionic/react';
 
-interface ContainerProps { }
-
-const ExploreContainer: React.FC<ContainerProps> = () => {
+const ExploreContainer: React.FC = () => {
     return (
         <div id="container">
+            <IonButton routerLink="/camera">Camera</IonButton>
+            <br/>
             <strong>Ready to create an app? Yes</strong>
             <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
                 href="https://ionicframework.com/docs/components">UI Components</a></p>

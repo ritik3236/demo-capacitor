@@ -23,23 +23,32 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { CameraPage, Home } from 'src/pages';
+
+import { usePushNotification } from 'src/hooks';
+import { CameraPage, Home, PushNotificationPage } from 'src/pages';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-    <IonApp>
-        <IonReactRouter>
-            <IonRouterOutlet>
-                <Route exact path="/">
-                    <Home/>
-                </Route>
-                <Route exact path="/camera">
-                    <CameraPage/>
-                </Route>
-            </IonRouterOutlet>
-        </IonReactRouter>
-    </IonApp>
-);
+const App: React.FC = () => {
+    usePushNotification();
+
+    return (
+        <IonApp>
+            <IonReactRouter>
+                <IonRouterOutlet>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>
+                    <Route exact path="/camera">
+                        <CameraPage/>
+                    </Route>
+                    <Route exact path="/push-notification">
+                        <PushNotificationPage/>
+                    </Route>
+                </IonRouterOutlet>
+            </IonReactRouter>
+        </IonApp>
+    );
+};
 
 export default App;

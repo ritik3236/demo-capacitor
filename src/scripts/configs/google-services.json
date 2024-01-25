@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "712177779584",
+    "firebase_url": "https://coindhan-gamma-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "coindhan-gamma",
+    "storage_bucket": "coindhan-gamma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712177779584:android:0bcbd485c733537137b765",
+        "android_client_info": {
+          "package_name": "gamma.coinfinacle.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712177779584-2fgd3bv2q552ims2jpm3pguagamuruvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gamma.coinfinacle.com",
+            "certificate_hash": "359b388186214b6db124fd88169ac980633d5063"
+          }
+        },
+        {
+          "client_id": "712177779584-i318b2pp82gmktf34p5ghlsrme3qielh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQoMtTQ2nU77o5foEYWtpQEND9bYZHpJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712177779584-i318b2pp82gmktf34p5ghlsrme3qielh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "712177779584-j5kcs48l28u5ocq4ibbbl4m1uoubfod1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "gamma.coinfinacle.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

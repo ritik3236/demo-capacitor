@@ -1,7 +1,4 @@
-import { camera } from 'ionicons/icons';
 import React, { useState } from 'react';
-
-import { Camera, CameraResultType } from '@capacitor/camera';
 
 import {
     IonBackButton,
@@ -17,22 +14,18 @@ import {
     useIonLoading,
 } from '@ionic/react';
 
+import { camera } from 'ionicons/icons';
+
+import { getPicture } from 'src/helpers';
+
 export const CameraPage: React.FC = () => {
     const [image, setImage] = useState(null);
     const [present, dismiss] = useIonLoading();
 
-    const takePicture = async () => {
-        await present('Loading...');
-        const image = await Camera.getPhoto({
-            quality: 90,
-            allowEditing: false,
-            resultType: CameraResultType.Base64,
-        });
-
-        setImage(`data:image/jpeg;base64,${image.base64String}`);
+    const handleBtnClick = async () => {
+        const { filePath } = await getPicture(present, dismiss);
+        setImage(filePath);
     };
-
-    const handleBtnClick = () => takePicture().finally(() => dismiss());
 
     return (
         <IonPage>
@@ -46,7 +39,7 @@ export const CameraPage: React.FC = () => {
             </IonHeader>
             <IonContent fullscreen>
                 <IonFab slot="fixed" vertical="bottom" horizontal="end">
-                    <IonFabButton onClick={handleBtnClick}>
+                    <IonFabButton id="open-loading" onClick={handleBtnClick}>
                         <IonIcon icon={camera}></IonIcon>
                     </IonFabButton>
                 </IonFab>

@@ -10,10 +10,10 @@ const ExploreContainer: React.FC = () => {
             <br/>
             <IonButton routerLink="/push-notification">Push Notification</IonButton>
             <br/>
-            <strong>Ready to create an app? no</strong>
+            <strong>Ready to create an app? Yes</strong>
             <p>Start with Ionic
                 <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">
-                    UI Components
+                    &nbsp;UI Components
                 </a>
             </p>
         </div>

@@ -21,7 +21,7 @@ const registerNotifications = async () => {
     }
 
     if (permStatus.receive !== 'granted') {
-        console.error('User denied permissions!');
+        alert('User denied permissions!');
     }
 
     await PushNotifications.register();

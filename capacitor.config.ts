@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
     appId: 'gamma.coinfinacle.com',
-    appName: 'capacitor-demo',
+    appName: 'Cap App',
     webDir: 'dist',
     server: {
         androidScheme: 'https',

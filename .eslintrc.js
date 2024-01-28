@@ -44,10 +44,10 @@ module.exports = {
             {
                 'groups': ['builtin', 'external', 'internal', ['parent', 'sibling', 'index'], ['object', 'type']],
                 'pathGroupsExcludedImportTypes': ['builtin'],
-                // define material-ui group that will appear separately after other main externals
                 'pathGroups': [
                     {pattern: '@capacitor/**', group: 'external', position: 'after'},
                     {pattern: '@ionic/**', group: 'external', position: 'after'},
+                    {pattern: 'ionicons/**', group: 'external', position: 'after'},
                 ],
                 'newlines-between': 'always-and-inside-groups',
                 'alphabetize': {order: 'asc', caseInsensitive: true},

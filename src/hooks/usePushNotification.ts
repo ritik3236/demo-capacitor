@@ -6,13 +6,9 @@ import { PushNotifications } from '@capacitor/push-notifications';
 export const usePushNotification = () => {
     React.useEffect(() => {
         if (Capacitor.isNativePlatform()) {
-            asyncFunc();
+            addNotificationListeners();
         }
     }, []);
-
-    const asyncFunc = async () => {
-        await addNotificationListeners();
-    };
 
     const addNotificationListeners = async () => {
         await PushNotifications.addListener('registration', (token) => {

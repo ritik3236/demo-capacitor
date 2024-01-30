@@ -25,7 +25,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 
 import { usePushNotification } from 'src/hooks';
-import { CameraPage, Home, PushNotificationPage } from 'src/pages';
+import { CameraPage, Home, HttpsPage, PushNotificationPage } from 'src/pages';
 
 setupIonicReact();
 
@@ -38,6 +38,9 @@ const App: React.FC = () => {
                 <IonRouterOutlet>
                     <Route exact path="/">
                         <Home/>
+                    </Route>
+                    <Route exact path="/https">
+                        <HttpsPage/>
                     </Route>
                     <Route exact path="/camera">
                         <CameraPage/>

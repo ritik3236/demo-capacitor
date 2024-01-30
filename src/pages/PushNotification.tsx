@@ -13,7 +13,7 @@ import {
     IonToolbar,
 } from '@ionic/react';
 
-const registerNotifications = async () => {
+const registerNotifications = async (setData: (s: string) => void) => {
     let permStatus = await PushNotifications.checkPermissions();
 
     if (permStatus.receive === 'prompt') {
@@ -25,6 +25,9 @@ const registerNotifications = async () => {
     }
 
     await PushNotifications.register();
+    return PushNotifications.addListener('registration', (data) => {
+        setData(data.value);
+    });
 };
 
 const getDeliveredNotifications = async () => {
@@ -33,6 +36,8 @@ const getDeliveredNotifications = async () => {
 };
 
 export const PushNotificationPage: React.FC = () => {
+    const [token, setToken] = React.useState('');
+
     return (
         <IonPage>
             <IonHeader>
@@ -45,7 +50,8 @@ export const PushNotificationPage: React.FC = () => {
             </IonHeader>
             <IonContent fullscreen>
                 <div id="container">
-                    <IonButton onClick={registerNotifications}>Register</IonButton>
+                    <p>Token: {token}</p>
+                    <IonButton onClick={() => registerNotifications(setToken)}>Register</IonButton>
                     <IonButton onClick={getDeliveredNotifications}>Get Notification</IonButton>
                 </div>
             </IonContent>

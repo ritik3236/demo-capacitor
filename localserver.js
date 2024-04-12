@@ -8,6 +8,10 @@ const server = http.createServer((req, res) => {
         query: req.url.split('?')[1], // Extracting query parameters for GET requests
     };
 
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, POST, GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, *');
+
     if (req.method === 'POST') {
         // Handling POST requests
         let data = '';

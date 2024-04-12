@@ -21,11 +21,17 @@ export const HttpsPage: React.FC = () => {
     const [postResponse, setPostResponse] = useState(null);
     const [loading, setLoading] = useState(false);
 
+    const headers = {
+        'content-type': 'application/json',
+        'XYZ': 'ccc',
+        'user-agent': navigator.userAgent,
+    };
+
     // Example of a GET request
     const doGet = async () => {
         const options = {
             url: 'http://192.168.29.53:3000',
-            headers: { 'X-Fake-Header': 'Fake-Value', 'content-type': 'application/json', 'accept': '*' },
+            headers,
         };
 
         setLoading(true);
@@ -39,7 +45,7 @@ export const HttpsPage: React.FC = () => {
     const doPost = async () => {
         const options = {
             url: 'http://192.168.29.53:3000/',
-            headers: { 'X-Fake-Header': 'Fake-Value', 'content-type': 'application/json', 'accept': '*' },
+            headers: headers,
             data: {
                 'email': 'eve.holt@reqres.in',
                 'password': 'pistol',
@@ -54,7 +60,7 @@ export const HttpsPage: React.FC = () => {
     const doAxiosGet = async () => {
         const options: AxiosRequestConfig = {
             url: encodeURI('http://192.168.29.53:3000'),
-            headers: { 'X-Fake-Header': 'Fake-Value', 'content-type': 'application/json', 'accept': '*' },
+            headers,
             method: 'GET',
         };
 
@@ -66,7 +72,7 @@ export const HttpsPage: React.FC = () => {
     const doAxiosPost = async () => {
         const options: AxiosRequestConfig = {
             url: 'http://192.168.29.53:3000',
-            headers: { 'X-Fake-Header': 'Fake-Value', 'content-type': 'application/json', 'accept': '*' },
+            headers: { ...headers },
             data: {
                 'email': 'eve.holt@reqres.in',
                 'password': 'pistol',
@@ -90,7 +96,7 @@ export const HttpsPage: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonLoading isOpen={loading}/>
-            <IonContent>
+            <IonContent class="ion-padding">
                 <div id="container">
                     <p className="ion-text-left"><b>getResponse: </b> {getResponse}</p><br/>
                     <p className="ion-text-left"><b>postResponse: </b> {postResponse}</p><br/>

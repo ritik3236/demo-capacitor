@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
                     <IonTitle>Capacitor Live</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen>
+            <IonContent fullscreen class="ion-padding">
                 <IonHeader collapse="condense">
                     <IonToolbar>
                         <IonTitle size="large">Capacitor</IonTitle>

@@ -48,7 +48,7 @@ export const PushNotificationPage: React.FC = () => {
                     <IonTitle>Push Notification</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen>
+            <IonContent fullscreen class="ion-padding">
                 <div id="container">
                     <p>Token: {token}</p>
                     <IonButton onClick={() => registerNotifications(setToken)}>Register</IonButton>

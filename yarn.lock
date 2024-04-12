@@ -3884,6 +3884,8 @@ __metadata:
     "@vitejs/plugin-react": "npm:^4.2.1"
     axios: "npm:^1.6.7"
     copy-webpack-plugin: "npm:^12.0.2"
+    cordova-plugin-advanced-websocket: "npm:1.1.7"
+    cordova-plugin-advanced-websocket-types: "npm:^0.0.5"
     cross-env: "npm:^7.0.3"
     css-loader: "npm:^6.9.1"
     eslint: "npm:^8.56.0"
@@ -4426,6 +4428,20 @@ __metadata:
   peerDependencies:
     webpack: ^5.1.0
   checksum: 1a2715a1280a37b81b7040b89ed962db4aa75475b164f84f266fa4e81f209269b13f8bff10b104dff7558854bafedcdd4f30c40fd23ecd8fa28af45516b459cd
+  languageName: node
+  linkType: hard
+
+"cordova-plugin-advanced-websocket-types@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "cordova-plugin-advanced-websocket-types@npm:0.0.5"
+  checksum: fffbe89cb19168fbd47534ec4be4306e5123f7e5997bfb9e2828a97cc758fbda461621be5c257f9a05910d3d75e7df5ed83f916ec986b617a5e93a564a060b34
+  languageName: node
+  linkType: hard
+
+"cordova-plugin-advanced-websocket@npm:1.1.7":
+  version: 1.1.7
+  resolution: "cordova-plugin-advanced-websocket@npm:1.1.7"
+  checksum: 7ceb1a4621628143df30ba0ae1f7beadea9e68c41011ffeda5ccd810fc4565f21c81c6363828041577d27b6d26a89fcf6c3de92ed296790bd75c5264a58d191b
   languageName: node
   linkType: hard
 

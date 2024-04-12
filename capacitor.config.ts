@@ -23,9 +23,6 @@ const config: CapacitorConfig = {
             splashImmersive: true,
         },
     },
-    ios: {
-        preferredContentMode: 'mobile',
-    },
 };
 
 export default config;

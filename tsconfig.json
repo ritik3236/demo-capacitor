@@ -3,22 +3,37 @@
     "target": "es2022",
     "module": "esnext",
     "moduleResolution": "bundler",
-
     "allowJs": true,
+    "noEmit": false,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "lib": ["dom", "dom.iterable", "es6", "scripthost", "webworker", "esNext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es6",
+      "scripthost",
+      "webworker",
+      "esNext"
+    ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "strict": false,
-    "typeRoots": ["./node_modules/@types"],
-    "types": ["node"],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
     "paths": {
-      "lib/*": ["src/lib/*"],
-      "src/*": ["src/*"]
+      "lib/*": [
+        "src/lib/*"
+      ],
+      "src/*": [
+        "src/*"
+      ]
     }
   },
   "ts-node": {

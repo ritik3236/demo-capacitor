@@ -27,8 +27,6 @@ import './theme/variables.css';
 import { usePushNotification } from 'src/hooks';
 import { CameraPage, DeviceInfo, Home, HttpsPage, PushNotificationPage } from 'src/pages';
 
-import './helpers/ranger';
-
 setupIonicReact();
 
 const App: React.FC = () => {

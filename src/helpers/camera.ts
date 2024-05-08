@@ -14,7 +14,6 @@ export const getPicture = async (loader, loaderDissenter: () => Promise<void>) =
                 return;
             }
 
-            await loader();
             const image = await Camera.getPhoto({
                 quality: 90,
                 allowEditing: false,

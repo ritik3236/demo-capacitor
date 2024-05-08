@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Route } from 'react-router-dom';
 
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
@@ -25,7 +24,10 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 
 import { usePushNotification } from 'src/hooks';
-import { CameraPage, DeviceInfo, Home, HttpsPage, PushNotificationPage } from 'src/pages';
+
+import { DeviceInfo } from 'src/pages';
+import { Login } from 'src/pages/Login';
+import { Tabs } from 'src/Tabs';
 
 setupIonicReact();
 
@@ -36,21 +38,9 @@ const App: React.FC = () => {
         <IonApp>
             <IonReactRouter>
                 <IonRouterOutlet>
-                    <Route exact path="/">
-                        <Home/>
-                    </Route>
-                    <Route exact path="/https">
-                        <HttpsPage/>
-                    </Route>
-                    <Route exact path="/camera">
-                        <CameraPage/>
-                    </Route>
-                    <Route exact path="/push-notification">
-                        <PushNotificationPage/>
-                    </Route>
-                    <Route exact path="/device-info">
-                        <DeviceInfo/>
-                    </Route>
+                    <Route exact path="/" component={Login}/>
+                    <Route path="/app" component={Tabs}/>
+                    <Route exact path="/device-info" component={DeviceInfo}/>
                 </IonRouterOutlet>
             </IonReactRouter>
         </IonApp>

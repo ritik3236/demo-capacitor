@@ -10,6 +10,7 @@ const ExploreContainer: React.FC = () => {
             <IonButton routerLink="/push-notification">Push Notification</IonButton>
             <IonButton routerLink="/https">HTTP Test</IonButton>
             <IonButton routerLink="/device-info">Device Info</IonButton>
+            <IonButton routerLink="/app">Tabs</IonButton>
             <br/>
             <strong>Ready to create an app? Yes</strong>
             <p>Start with Ionic

@@ -32,7 +32,7 @@ export const CameraPage: React.FC = () => {
             <IonHeader>
                 <IonToolbar>
                     <IonButtons slot="start">
-                        <IonBackButton defaultHref="/"/>
+                        <IonBackButton defaultHref="/app"/>
                     </IonButtons>
                     <IonTitle>Camera</IonTitle>
                 </IonToolbar>

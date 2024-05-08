@@ -1394,6 +1394,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@capacitor/browser@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@capacitor/browser@npm:6.0.0"
+  peerDependencies:
+    "@capacitor/core": ^6.0.0
+  checksum: b317b3c331d661dba5504c5c6f2a9f884f40adcf81cd5b20621d5585601a7047d736ab101941ba457bd4ea098914583035b70f331f1335f0867a1aae1f84cff0
+  languageName: node
+  linkType: hard
+
 "@capacitor/camera@npm:^6.0.0":
   version: 6.0.0
   resolution: "@capacitor/camera@npm:6.0.0"
@@ -1460,6 +1469,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@capacitor/clipboard@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@capacitor/clipboard@npm:6.0.0"
+  peerDependencies:
+    "@capacitor/core": ^6.0.0
+  checksum: 88dfa99cd6dff9a70d150a3b4b12a2d0f9934d961ec58553a6c4e820cda8ef6cabaed253624a774c5faf239f2dab7062183962f16064ee7ccf495f0d1aeaad71
+  languageName: node
+  linkType: hard
+
 "@capacitor/core@npm:^6.0.0":
   version: 6.0.0
   resolution: "@capacitor/core@npm:6.0.0"
@@ -1511,6 +1529,15 @@ __metadata:
   peerDependencies:
     "@capacitor/core": ^6.0.0
   checksum: b76205a0e96159b597daa3504058376e8677ed6f7da06abaae6c0af71ea6bb0fbb2f913459c979d649e26e16a8614217713b283578c6f92f1e93c861f0c093dc
+  languageName: node
+  linkType: hard
+
+"@capacitor/share@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@capacitor/share@npm:6.0.0"
+  peerDependencies:
+    "@capacitor/core": ^6.0.0
+  checksum: 6872053aaf110cae3edab4cd581358a5921f6e1b174906e94e18a3c5be56fd37be6624d249ba923abc91c9262a61a772b5a0b249dafcae5e64e7f15768407104
   languageName: node
   linkType: hard
 
@@ -2206,11 +2233,11 @@ __metadata:
   linkType: hard
 
 "@npmcli/fs@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@npmcli/fs@npm:3.1.0"
+  version: 3.1.1
+  resolution: "@npmcli/fs@npm:3.1.1"
   dependencies:
     semver: "npm:^7.3.5"
-  checksum: 162b4a0b8705cd6f5c2470b851d1dc6cd228c86d2170e1769d738c1fbb69a87160901411c3c035331e9e99db72f1f1099a8b734bf1637cc32b9a5be1660e4e1e
+  checksum: c37a5b4842bfdece3d14dfdb054f73fe15ed2d3da61b34ff76629fb5b1731647c49166fd2a8bf8b56fcfa51200382385ea8909a3cbecdad612310c114d3f6c99
   languageName: node
   linkType: hard
 
@@ -4148,14 +4175,17 @@ __metadata:
     "@capacitor/android": "npm:^6.0.0"
     "@capacitor/app": "npm:^6.0.0"
     "@capacitor/assets": "npm:^3.0.5"
+    "@capacitor/browser": "npm:^6.0.0"
     "@capacitor/camera": "npm:^6.0.0"
     "@capacitor/cli": "npm:^6.0.0"
+    "@capacitor/clipboard": "npm:^6.0.0"
     "@capacitor/core": "npm:^6.0.0"
     "@capacitor/device": "npm:^6.0.0"
     "@capacitor/haptics": "npm:^6.0.0"
     "@capacitor/ios": "npm:^6.0.0"
     "@capacitor/keyboard": "npm:^6.0.0"
     "@capacitor/push-notifications": "npm:^6.0.0"
+    "@capacitor/share": "npm:^6.0.0"
     "@capacitor/splash-screen": "npm:^6.0.0"
     "@capacitor/status-bar": "npm:^6.0.0"
     "@ionic/core": "npm:^8.1.0"
@@ -10027,13 +10057,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.4":
-  version: 7.6.0
-  resolution: "semver@npm:7.6.0"
-  dependencies:
-    lru-cache: "npm:^6.0.0"
+  version: 7.6.1
+  resolution: "semver@npm:7.6.1"
   bin:
     semver: bin/semver.js
-  checksum: fbfe717094ace0aa8d6332d7ef5ce727259815bd8d8815700853f4faf23aacbd7192522f0dc5af6df52ef4fa85a355ebd2f5d39f554bd028200d6cf481ab9b53
+  checksum: fd28315954ffc80204df0cb5c62355160ebf54059f5ffe386e9903162ddf687ed14004c30f6e5347fa695fc77bafa242798af8d351f1d260207f007cfbeccb82
   languageName: node
   linkType: hard
 
